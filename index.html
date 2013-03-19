@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Inventours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- STYLES -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="bootstrap-responsive.css" rel="stylesheet">
+    
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap.js"></script>
+      
+    <script>
+    $(document).ready(function() {
+       $("#navi").scrollspy();
+       $('.scrollPage').click(function() {
+          var elementClicked = $(this).attr("href");
+          var destination = $(elementClicked).offset().top;
+          $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-20}, 500 );
+          return false;
+       });
+    });
+    </script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body data-spy="scroll" data-target="#navi" data-offset="80">
+  		
+    <div id="navi" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Inventours</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a class="scrollPage" href="#home">Home</a></li>
+              <li><a class="scrollPage" href="#events">Events</a></li>
+              <li><a class="scrollPage" href="#about">About</a></li>
+              <li><a class="scrollPage" href="#pricing">Pricing</a></li>
+	            <li><a class="scrollPage" href="#benefits">Benefits</a></li>
+	            <li><a class="scrollPage" href="#press">Press</a></li>
+	            <li><a class="scrollPage" href="#contact">Contact</a></li>
+            </ul>
+            <div class="btn-group pull-right">
+              <a class="btn btn-warning" href="http://www.eventbrite.com/org/1157110469" target="_blank"><i class="icon-star icon-white"></i>   Register Now!</a>
+              <button class="btn dropdown-toggle btn-warning" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="http://inventours-barcelona-eorg.eventbrite.com" target="_blank">Barcelona</a></li>
+                <li><a href="http://inventours-copenhagen-eorg.eventbrite.com" target="_blank">Copenhagen</a></li>
+  	            <li><a href="http://inventours-ny-eorg.eventbrite.com" target="_blank">New York City</a></li>
+  	            <li><a href="http://inventours-paris-eorg.eventbrite.com" target="_blank">Paris</a></li>
+              </ul>
+            </div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div id="home" class="container">
+      <div class="hero-unit">
+        <img id="logo" class="span5" src="whitelogo.png">
+        <h3 class="span6">Process & Creativity Training for Executives Looking to Innovate Through Exclusive Access to World Renowned Innovators</h3>
+        <p class="span9"><a href="#events" class="btn btn-info btn-large scrollPage">View Upcoming Events</a>  <a href="#about" class="btn btn-primary btn-large scrollPage">Learn more &raquo;</a></p>
+        </div>
+      </div>
+      <div id="events" class="container">
+      <div class="row">
+          <div class="span3">
+          <div class="center">
+          <img class="img-polaroid" src="barcelona.jpg">
+          <h3>Barcelona</h3>
+          <h4 class="date text-info">June 9th-14th</h4>
+          </div>
+          <p>Barcelona has long been a hotbed of creativity and independent thinking: home of groundbreaking artists Picasso, Miro and Dali, and the brilliantly original, architect Antoni Gaudi...Barcelona shouts with innovative, original, independent design thinking in all creative fields and so it was selected as the perfect city for an Inventours™ innovation inspiration program.</p>
+          <p><a href="#barcelonaModal" role="button" class="btn" data-toggle="modal">View Details &raquo;</a></p>
+        </div>
+        <div class="span3">
+          <div class="center">
+          <img class="img-polaroid" src="copenhagen.jpg">
+          <h3>Copenhagen</h3>
+          <h4 class="date text-info">June 16th-21st</h4>
+          </div>
+          <p>Copenhagen is recognized as “the greenest city in the world”.  It has a history of exceptional design, long known for its pastries and baked goods, artistic open faced sandwiches, and rich cheeses and butter, and can now boast the #1 ranked restaurant in the world...</p>
+          <p><a href="#copenhagenModal" role="button" class="btn" data-toggle="modal">View Details &raquo;</a></p>
+       </div>
+       <div class="span3">
+         <div class="center">
+         <img class="img-polaroid" src="newyork.jpg">
+         <h3>New York City</h3>
+         <h4 class="date text-info">July 21st-26th</h4>
+         </div>
+         <p>Considered by many to be the most exciting and dynamic city in the world, perhaps because it has always been a melting pot of cultures, New York thrives on individuality and new ideas. It is a global fashion capital, a gastronomic paradise, a center for art museums and galleries that promote new artistic thinking, and more...</p>
+         <p><a href="#nycModal" role="button" class="btn" data-toggle="modal">View Details &raquo;</a></p>
+       </div>
+       <div class="span3">
+         <div class="center">
+         <img class="img-polaroid" src="paris.jpg" >
+         <h3>Paris</h3>
+         <h4 class="date text-info">Date TBD</h4>
+         </div>
+         <p>Paris is home to many of the finest pastry and chocolate shops in the world, such as Pierre Hermé, Ladurée, Maison Du Chocolat, and Jean Paul Hevin. The city’s 3-star Michelin restaurants are legendary. Trend-setting retailers, and fashion, accessory, and jewelry designers, make Paris one of the world’s great centers of style innovation...</p>
+         <p><a href="#parisModal" role="button" class="btn" data-toggle="modal">View Details &raquo;</a></p>
+      </div>
+      </div>
+      </div>
+      <div id="info" class="container">
+        <div id="about" class="container">
+            <h2>What is Inventours?</h2>
+            <hr>
+            <p class="lead">Inventours is a program designed to provide Chief Marketing Officers, Chief Innovation Officers, Heads of R&D, Product Designers, and other Creatives, with actionable insights they can take back to their offices to improve and refresh their own company’s innovation processes and techniques.</p>
+            <p>Each city program consists of 5 days of carefully curated, exclusive meetings with world-renowned innovators in Product Design, Technology, Food, Sustainability, Fashion, Architecture, and Hospitality.  These interactive meetings with highly successful and diverse thought-leaders, are held at their workplaces.  Each presenting firm will showcase a range of work, innovation philosophies, process approaches, and diverse stimuli.  Expert faculty will lead debrief sessions to make the learning actionable for companies.</p>
+          </div>
+      <div id="pricing" class="container">
+        <h2>Pricing</h2>
+        <hr>
+        <h4>Program Cost: $7,950 if booked prior to March 1, 2013, and $8,250 if booked after.</h4>
+        <p>Innovative meals and snacks are an important part of the program.  Meals included: a group dinner Sunday evening, and breakfasts, lunches and snacks, Monday through Friday.  Transportation between venues is included.  Hotels and airfare are not included.  We can help with travel arrangements, and innovative hotel recommendations.<p>
+      </div>
+      </div>
+      </div>
+      <div id="benefits" class="container">
+        <h2>How Inventours™ Differs From Other Top-Tier Executive Education Programs</h2>
+        </br>
+        <div class="row">
+            <div class="span4">
+              <div class="center img-benefits">
+              <img class="" src="ideas_small.png">
+              </div>
+              </br><p><strong>Learning is from highly successful practitioners</strong>, not academics, so the program is highly practical, not theoretical</p>
+          </div>
+          <div class="span4">
+            <div class="center img-benefits">
+            <img class="" src="gears_small.png">
+            </div>
+            </br><p><strong>Meetings take place in practitioner workplaces</strong>, rather than classrooms, so attendees can observe how different physical environments can impact creativity and collaboration</p>
+          </div>
+          <div class="span4">
+            <div class="center img-benefits">
+            <img class="" src="worldnodes_small.png">
+            </div>
+            </br><p><strong>Inventours™ perspective is global.</strong>  Attendees will be from different countries, and the programs, by virtue of taking place in global cities known for creativity and design, illustrate how people are working in markets known for innovation</p>
+          </div>
+          </div>
+          <div class="row">
+          <div class="span4">
+            <div class="center img-benefits">
+            <img class="" src="groupinsight_small.png">
+            </div>
+            </br><p><strong>Additional learning comes from interactions with fellow participants.</strong>  By sharing observations during faculty-led debrief sessions, the learning and observations of the group are magnified through hearing each other’s different perspectives</p>
+          </div>
+          <div class="span4">
+            <div class="center img-benefits">
+            <img class="" src="improve_small.png">
+            </div>
+            </br><p><strong>Sustainable innovation examples are woven throughout the different creative field presentations</strong></p>
+          </div>
+          <div class="span4">
+            <div class="center img-benefits">
+            <img class="" src="growth_small.png">
+            </div>
+            </br><p><strong>Practical application to participants’ own businesses is emphasized.</strong></p>
+          </div>
+          </div>
+      </div>
+      <div id="press" class="container">
+        <h2>Inventours in the News</h2>
+        <hr>
+        <div class="row">
+          <div class="span6">
+            <img class="" src="crains.png">
+            <h3>A global approach to innovation</h3>
+            <h4 class="date text-warning">Crain's New York Business</h4>
+             <h4 class="date text-info">October 12, 2012 by Anne Fisher</h4>
+            <p>Where will your next great idea come from? More and more, big companies are looking beyond their walls to find everything from basic design elements to new production methods and materials. “At Procter & Gamble, for instance, they’ve set a goal of getting at least 50% of their new-product ideas from outside the company,” noted entrepreneur Michelle Greenwald. “ ‘Open innovation’ is very hot.”</p>
+ <p><a class="btn" href="http://www.dcdr.dk/uk/menu/update/webzine/articles/placing-intuition-centre-stage" target="_blank">Read more &raquo;</a></p>
+          </div>
+          <div class="span6">
+            <img class="" src="minddesign.gif">
+            <h3>Placing Intuition Centre Stage</h3>
+            <h4 class="date text-warning">Mind Design vol5 #50, Danish Centre for Design Research</h4>
+             <h4 class="date text-info">June 2012 by Hans Emborg Bünemann</h4>
+            <p>Two innovation experts discuss some of the current and coming trends in the field of innovation. Susana Borrás, a professor at the Copenhagen Business School, and Michelle Greenwald, an adjunct associate professor at the business schools of New York University and Columbia University in the USA, discuss the role of intuition in product development and the bottom of the pyramid as a key emerging market.</p>
+ <p><a class="btn" href="http://www.dcdr.dk/uk/menu/update/webzine/articles/placing-intuition-centre-stage" target="_blank">Read more &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="container">
+        <h2>Get in Touch!</h2>
+        <form class="form-horizontal span4">
+          <div class="control-group">
+            <label class="control-label" for="inputName">Name</label>
+            <div class="controls">
+              <input type="text" id="inputName" placeholder="">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputCompany">Company</label>
+            <div class="controls">
+              <input type="password" id="inputCompany" placeholder="">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputEmail">Email</label>
+            <div class="controls">
+              <input type="password" id="inputEmail" placeholder="">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+      <hr>
+
+      <footer>
+        <p>&copy; INVENTOURS 2012, ALL RIGHTS RESERVED</p>
+      </footer>
+
+      <!-- Barcelona Modal -->
+      <div id="barcelonaModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="barcelonaLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="barcelonaLabel">Barcelona June 9th-14th</h3>
+        </div>
+        <div class="modal-body">
+          <p>Barcelona has long been a hotbed of creativity and independent thinking: home of groundbreaking artists Picasso, Miro and Dali, and the brilliantly original, architect Antoni Gaudi.  In cuisine, Ferran Adria is considered the most innovative chef in the world in history.  In fashion, Desigual, Custo, and Camper are innovators in color, asymmetry, and style.  Buildings such as the gold, fish-shaped Arts Hotel, Jean Nouvel’s Torre Agbar, the colored tile roof of Santa Catarina Market, and the Palace of Music, all have made Barcelona a world-class center of architectural innovation.  Barcelona shouts with innovative, original, independent design thinking in all creative fields and so it was selected as the perfect city for an Inventours™ innovation inspiration program.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-info" target="_blank"><i class="icon-file icon-white"></i> View Agenda</a>
+          <a href="http://inventours-barcelona-eorg.eventbrite.com" class="btn btn-warning" target="_blank"></i>Register</a>
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+      
+      <!-- Copenhagen Modal -->
+      <div id="copenhagenModal" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="copenhagenLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="copenhagenLabel">Copenhagen June 16th-21st</h3>
+        </div>
+        <div class="modal-body">
+          <p>Copenhagen is recognized as “the greenest city in the world”.  It has a history of exceptional design, from Georg Jensen silversmiths, Dansk tableware, Royal Copenhagen porcelain, to Scandinavian Design Furniture.  Danish cooking, long known for its pastries and baked goods, artistic open faced sandwiches, and rich cheeses and butter, can now boast the #1 ranked restaurant in the world, Noma.  This “New Nordic Cuisine” combines centuries old food preparation techniques and locally foraged ingredients with modern takes on presentation.  This global design capital was selected for an Inventours™ program because of the breadth and depth of its world class creativity.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-info" target="_blank"><i class="icon-file icon-white"></i> View Agenda</a>
+          <a href="http://inventours-copenhagen-eorg.eventbrite.com" class="btn btn-warning" target="_blank"></i>Register</a>
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+      
+      <!-- NYC Modal -->
+      <div id="nycModal" class="modal hide fade" tabindex="-3" role="dialog" aria-labelledby="nycLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="nycLabel">New York City July 21st-26th</h3>
+        </div>
+        <div class="modal-body">
+          <p>Considered by many to be the most exciting and dynamic city in the world, perhaps because it has always been a melting pot of cultures, New York thrives on individuality and new ideas. It is a global fashion capital, a gastronomic paradise, a center for art museums and galleries that promote new artistic thinking, and a Mecca for product and packaging design, and cutting edge exterior and interior architecture. In landscape architecture, the High Line elevated park, built on an abandoned railroad track, has captivated the imagination with its unique art installations, outdoor furniture, and native New York plantings. New York provides the ultimate stimulus for creative design and innovation thinking, with its mix of established thought leaders and budding entrepreneurs. Participants will learn and be inspired by the best.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-info" target="_blank"><i class="icon-file icon-white"></i> View Agenda</a>
+          <a href="http://inventours-ny-eorg.eventbrite.com" class="btn btn-warning" target="_blank"></i>Register</a>
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+      
+      <!-- Paris Modal -->
+      <div id="parisModal" class="modal hide fade" tabindex="-4" role="dialog" aria-labelledby="parisLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="parisLabel">Paris Date TBD</h3>
+        </div>
+        <div class="modal-body">
+          <p>Paris is home to many of the finest pastry and chocolate shops in the world, such as Pierre Hermé, Ladurée, Maison Du Chocolat, and Jean Paul Hevin. The city’s 3-star Michelin restaurants are legendary. Trend-setting retailers such as Colette, and fashion, accessory, and jewelry designers such as Christian Louboutin, Louis Vuitton, Christian Dior, and Van Clef & Arpels, make Paris one of the world’s great centers of style innovation. Architects past and present, such as Gustav Eiffel and Jean Nouvel, and groundbreaking structures such as the Pompidou Center and Quai Branly Museum, make Paris a hotbed of architectural creativity. Color and pattern innovations like Pierre Deux fabrics and toile are constantly being reinvented with different twists. Sensory innovation has also been a hallmark of Paris, as a leading developer of fragrances, with houses such as Givenchy, Chanel and Guerlain. Through Inventours Paris, attendees will experience immersive and stimulating exposure to best-in-class, creative, innovator/practitioners in their workplaces, with real applicability to their own firm’s new product and service development processes.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-info" target="_blank"><i class="icon-file icon-white"></i> View Agenda</a>
+          <a href="http://inventours-paris-eorg.eventbrite.com" class="btn btn-warning" target="_blank"></i>Register</a>
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+      </div>
+</div>
+    </div> <!-- /container -->
+  </body>
+</html>

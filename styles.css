@@ -1,0 +1,138 @@
+body {
+  background-image: url("seamlesstexture29_500.jpg");
+}
+
+#home {
+  color: black;
+  padding: 20px;
+  padding-bottom: 60px;
+  background-image: url("home.jpg");
+}
+
+#infobox {
+  float:right;
+  background-color: rgba(255,255,255,.75);
+  padding: 20px;
+}
+
+#logo {
+}
+
+#cats{
+  position: absolute;
+  right: 160px;
+  top: 80px;
+}
+
+#events {
+  background-color: rgba(255,255,255,.85);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#about{
+  background-color: rgba(49,197,244,.95);
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 33%;
+  float: left;
+  position: relative;
+}
+
+#pricing {
+  margin-top: 420px;
+  margin-bottom: 20px;
+  background-color: rgba(245,95,49,.95);
+  color: white;
+  padding: 20px;
+  width: 33%;
+  position: relative;
+  float: right;
+}
+
+#aboutcontain {
+  position:relative;
+}
+
+#info {
+  background-image: url("home.jpg");
+  padding: 20px;
+}
+
+.date {
+  font-weight: 400;
+}
+
+#benefits {
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+  
+#testimonials {
+  background-color: rgba(255,255,255,.95);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#press {
+  background-color: rgba(255,255,255,.95);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#contact {
+  background-color: rgba(0,0,0,.8);
+  color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+.center {
+  text-align: center;
+}
+
+p.speech {
+	position: relative;
+	padding: 20px;
+	height: auto;
+	background-color: rgba(0,0,0,.45);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.firstcharacter {
+  font-family: 'Times New Roman', serif;
+  float: left;
+  color: #FFBF00;
+  font-size: 75px;
+  line-height: 20px; 
+  padding-top: 10px;
+  padding-right: 8px; 
+  padding-left: 4px; 
+}
+
+p.reviewer {
+  text-align: bottom;
+} 
+
+h3 {
+  background-color: rgba(255,255,255,.5);
+  padding: 10px;
+}
+   
+   
+   
+   
+   
+   
+   
